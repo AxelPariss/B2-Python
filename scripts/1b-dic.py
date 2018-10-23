@@ -15,7 +15,6 @@
 
 import re
 
-
 # ------------------------
 #
 #       Variables
@@ -43,7 +42,6 @@ def is_number(value):
 
 # Check if value is a correct string
 def is_firstname(value):
-  print(re.match(firstname_pattern, value))
   if not is_number(value):
     if re.match(firstname_pattern, value) is None:
       return False
