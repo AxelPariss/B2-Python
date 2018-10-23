@@ -3,15 +3,8 @@
 # title: 1a-add.py
 # description: Fais une addition de 2 nombres
 # date: 15/10/2018
+# last edited: 23/10/2018
 # author: Axel PARIS
-
-# ------------------------
-#
-#        Imports
-#
-# ------------------------
-
-import re
 
 # ------------------------
 #
@@ -47,8 +40,10 @@ number2 = input('Entrez un autre nombre: ')
 #
 # ------------------------
 
+# Check if user inputs are numbers
 if not is_number(number1) or not is_number(number2):
   print('Oups ! Vous devez entrer des nombres')
   exit()
 
+# Print result of addition of both inputs
 print(add(number1, number2))
