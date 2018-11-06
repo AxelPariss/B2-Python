@@ -40,7 +40,7 @@ def display_result(result = None):
   if result is None:
     write_in_file('Oups ! Vous n\'etes pas alle au bout :/')
   else :
-    write_in_file('Bravo ! Vous avez trouve, il s\'agit du nombre: '+str(result))
+    write_in_file('Bravo !')
 
 # clean file
 def clean_file():
@@ -90,7 +90,7 @@ def is_number(value):
 # ------------------------
 
 clean_file()
-write_in_file("Bienvenue dans el famoso jeu du plus ou moins !\n")
+write_in_file("Bienvenue dans el famoso jeu du plus ou moins !\nEntrez un nombre compris entre "+str(min_value)+" et "+str(max_value)+"\n")
 
 # While the user doesn't found the random number
 while win == False :
@@ -98,15 +98,12 @@ while win == False :
 
   # We wait user submit a value
   if not is_number(user_input):
-    if user_input != "Entrez un nombre compris entre "+str(min_value)+" et "+str(max_value)+"\n":
-      write_in_file("Entrez un nombre compris entre "+str(min_value)+" et "+str(max_value)+"\n")
     time.sleep(1)
   elif int(user_input) > random:
-    write_in_file('Votre proposition est trop grande !\n')
+    write_in_file('Trop grand !\n')
   elif int(user_input) < random:
-    write_in_file('Votre proposition est trop petite !\n')
+    write_in_file('Trop petit !\n')
   else:
-    write_in_file('gg man\n')
     win = True
 
 # Print final message

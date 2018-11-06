@@ -1,0 +1,22 @@
+Bienvenue dans el famoso jeu du plus ou moins !
+Entrez un nombre compris entre 0 et 100
+50
+Trop petit !
+75
+Trop petit !
+87
+Trop grand !
+43
+Trop petit !
+71
+Trop petit !
+85
+Trop petit !
+92
+Trop grand !
+46
+Trop petit !
+73
+Trop petit !
+86
+Bravo !
